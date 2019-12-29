@@ -12,7 +12,7 @@ end
   test "should get home" do
     get static_pages_home_url
     assert_response :success
-    assert_select 'title', text: "Home | #{@base_title}"
+    assert_select 'title', text: "#{@base_title}"
 
   end
 
